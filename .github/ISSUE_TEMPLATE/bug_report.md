@@ -8,8 +8,8 @@ assignees: ''
 ---
 
 **Affected Theme**
- - Name
- - Version (e.g. x.x.x)
+ - Name: 
+ - Version (e.g. x.x.x): 
 
 **Affected Theme Settings**
 - x
