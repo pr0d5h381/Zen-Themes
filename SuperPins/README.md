@@ -21,6 +21,7 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
   - Keep pinned tabs at the top when scrolling
   - Add a custom background to active Pins
   - Add a strike-through effect on unloaded tabs
+  - Change the times in which to display the separator (3 Options Dropdown)
   - Dim unloaded tabs
   - Customize height of Pinned tabs (Small, Normal, Large) ([@gabry-ts](https://github.com/gabry-ts))
   - Adjust tab favicon size (Small, Normal, Large) ([@gabry-ts](https://github.com/gabry-ts))
