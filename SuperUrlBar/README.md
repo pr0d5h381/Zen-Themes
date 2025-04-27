@@ -2,11 +2,11 @@
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
-
+**Latest Version:** 1.5.0
 ## Settings:
-  - Adjust border radius of the url bar (Circle like corners)
+  - Adjust border radius of the url bar (4 Levels of Intensity)
   - Center url text
-  - Remove the border of the url bar
+  - Add border to the url bar.
   - Move 1 button that's directly next to the url bar (you can do that by using 'Customize Toolbar') into the url bar (Credit: [YouCanTouCan](https://github.com/YouCanTouCan))
   - Blur the background when the url bar is in focus (5 Levels of Intensity)
   - Always open Websites in a New Tab from Url Bar
