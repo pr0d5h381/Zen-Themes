@@ -4,6 +4,8 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
+
+**Latest Version:** 1.5.1
 ## Features (toggle in Zens Mod settings):
   - Increase the width of Essentials/Pins (This can be controlled through a dropdown)
   - Controllable Margins between Essentials/Pins (3 Options Dropdown)
