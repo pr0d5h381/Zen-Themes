@@ -2,7 +2,7 @@
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
-**Latest Version:** 1.5.0
+**Latest Version:** 1.4.2
 ## Settings:
   - Adjust border radius of the url bar (4 Levels of Intensity)
   - Center url text
