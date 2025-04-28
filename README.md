@@ -7,7 +7,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
-  - **Super Url Bar** (in progress)
+  - **Super Url Bar** (currently being submitted to the Mod site.)
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
@@ -22,3 +22,5 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 ---
 
 You can find the code of each theme inside this repository!
+
+❤️❤️   ***Thanks to the original creator, [@JLBlk](https://github.com/JLBlk), for letting me maintain his mods!***   ❤️❤️
