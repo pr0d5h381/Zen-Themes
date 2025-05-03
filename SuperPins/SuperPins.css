@@ -188,6 +188,13 @@
         }
     }
 
+    /* Makes Essentials have the same height as pinned tabs */
+    @media (-moz-bool-pref: "uc.essentials.same-height") {
+        #navigator-toolbox[zen-sidebar-expanded="true"] #zen-essentials-wrapper {
+            --tab-min-height: unset !important;
+        }
+    }
+
     /* If Essentials have a grid count but do not have auto-grow on */
     @media (-moz-bool-pref: "uc.essentials.grid-count") {
         #zen-essentials-container, .zen-essentials-container {
