@@ -459,7 +459,7 @@
         }
 
         :root:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"]) {
-            #zen-essentials-container, #zen-essentials-wrapper {
+            #zen-essentials-container, #zen-essentials-wrapper:has(> :nth-child(1)) {
                 &:has(~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container .zen-workspace-tabs-section[active="true"] .tabbrowser-tab) ~ #zen-tabs-wrapper {
                     padding-top: 8px !important;
                 }
@@ -479,7 +479,11 @@
         }
 
         :root:not(:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"])) {
-            #zen-essentials-container, .zen-essentials-container {
+            #zen-essentials-wrapper:has(> :nth-child(1)) ~ #zen-tabs-wrapper {
+                padding-top: 8px !important;
+            }
+
+            #zen-essentials-container {
                 margin-bottom: 8px !important;
             }
         }
