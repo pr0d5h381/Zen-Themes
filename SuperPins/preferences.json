@@ -139,6 +139,35 @@
         "disabledOn": []
     },
     {
+        "property": "zen.workspaces.indicator-name-center",
+        "label": "Center the workspace indicator name",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.superpins.essentials-below-indicator",
+        "label": "Essentials will be placed below workspace indicator when both are at the bottom",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "zen.workspaces.indicator-position",
+        "label": "Select the position of the workspace indicator",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Top",
+                "value": "top"
+            },
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ]
+    },
+    {
         "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
         "label": "Loads pinned tabs only when using them, instead of loading all of them on startup",
         "type": "checkbox",
