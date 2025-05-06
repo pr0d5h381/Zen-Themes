@@ -127,7 +127,7 @@
             }
         }
 
-        @media (not (-moz-bool-pref: "uc.pins.auto-grow")) {
+        @media not (-moz-bool-pref: "uc.pins.auto-grow") {
             #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
                 grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
                 display: grid !important;
@@ -148,7 +148,7 @@
 
         /*The actual grid layout*/
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section:has(> :nth-child(2)) {
-            margin: 0 var(--zen-toolbox-padding) !important;
+            margin-left: var(--zen-toolbox-padding) !important;
             padding: 0 var(--zen-toolbox-padding) !important;
             overflow: visible !important;
             padding-bottom: 17px !important;
@@ -237,7 +237,7 @@
     }
 
     /* Puts Essentials at the bottom */
-    :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+    :root:has(#theme-SuperPins[uc-essentials-position="bottom"]) {
         #zen-essentials-container, #zen-essentials-wrapper {
             order: 999 !important;
             margin-top: auto !important;
@@ -453,7 +453,7 @@
     }
 
     /* Increase margin below Essentials in case the workspace indicator is not visible. */
-    @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
+    @media not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator") {
         #zen-current-workspace-indicator-container {
             display: none !important;
         }
@@ -485,6 +485,85 @@
 
             #zen-essentials-container {
                 margin-bottom: 8px !important;
+            }
+        }
+    }
+
+    @media (-moz-bool-pref: "zen.workspaces.indicator-name-center") {
+        .zen-current-workspace-indicator-name {
+            position: absolute !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    /* Repeat the not show-workspace-indicator rules because there is no way to do inline */
+    :root:has(#theme-SuperPins[zen-workspaces-indicator-position="top"]), :root:has(#theme-SuperPins[zen-workspaces-indicator-position="bottom"]) {
+        &:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"]) {
+            #zen-essentials-container, #zen-essentials-wrapper:has(> :nth-child(1)) {
+                &:has(~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container .zen-workspace-tabs-section[active="true"] .tabbrowser-tab) ~ #zen-tabs-wrapper {
+                    padding-top: 8px !important;
+                }
+            }
+
+            #zen-essentials-container:has(> :nth-child(1)), #zen-essentials-wrapper:has(.zen-essentials-container .tabbrowser-tab) {
+                &~#zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                    min-height: 20px !important;
+                }
+            }
+
+            #zen-essentials-container:has(> :nth-child(1)), #zen-essentials-wrapper:has(.zen-essentials-container .tabbrowser-tab) {
+                &~#zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section .vertical-pinned-tabs-container-separator {
+                    max-height: unset !important;
+                }
+            }
+        }
+
+        &:not(:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"])) {
+            #zen-essentials-wrapper:has(> :nth-child(1)) ~ #zen-tabs-wrapper {
+                padding-top: 8px !important;
+            }
+
+            #zen-essentials-container {
+                margin-bottom: 8px !important;
+            }
+        }
+
+        .zen-current-workspace-indicator {
+            margin-top: 0 !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[zen-workspaces-indicator-position="top"]):not(:has(#theme-SuperPins[uc-essentials-position="bottom"])) {
+        .zen-essentials-container {
+            padding-top: 48px !important;
+        }
+
+        #zen-tabs-wrapper {
+            transform: translateY(-48px) !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[zen-workspaces-indicator-position="bottom"]) {
+        #zen-current-workspace-indicator-container {
+            order: 999 !important;
+        }
+
+        .zen-essentials-container {
+            margin-top: 0 !important;
+        }
+    }
+
+    @media (-moz-bool-pref: "uc.superpins.essentials-below-indicator") {
+        :root:has(#theme-SuperPins[zen-workspaces-indicator-position="bottom"]) {
+            #zen-current-workspace-indicator-container {
+                order: 900 !important;
+            }
+        }
+        
+        :root:has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+            #zen-essentials-wrapper {
+                order: 999 !important;
             }
         }
     }
@@ -543,7 +622,7 @@
         }
 
         /* In case workspace indicator is not visible. */
-        @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
+        @media not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator") {
             #tabbrowser-arrowscrollbox>.zen-workspace-tabs-section {
                 max-height: calc(100% - 5px) !important;
             }
