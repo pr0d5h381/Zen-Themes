@@ -17,6 +17,9 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
   - Box like corners for Essentials (less rounded corners)
   - Make Essentials transparent
   - Hide the workspace indicator between Essentials and Pins
+  - Center the workspace indicator text
+  - Place essentials below the workspace indicator when both are at the bottom
+  - Move the workspace indicator to the top or bottom.
   - Load pinned tabs only when using them, instead of loading all of them on startup
   - Keep pinned tabs at the top when scrolling
   - Add a custom background to active Pins
