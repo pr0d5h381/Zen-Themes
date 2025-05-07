@@ -3,7 +3,7 @@
 This **Zen Mod** gives you powerful and good looking gradients with many options to customize it to your liking.
 It automatically adapts to light or dark mode, adjusts the accent color to the gradient and works flawlessly with compact mode.
 
-![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/image.png)
+![image](https://raw.githubusercontent.com/CosmoCreeper/Zen-Themes/refs/heads/main/SuperGradient/image.png)
 
 ## Available Gradients (Need to be enabled in the Zen Mods Settings):
   - "Northern Horizen": A blue-green'ish gradient
