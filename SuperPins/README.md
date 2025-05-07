@@ -2,7 +2,7 @@
 
 This **Zen Mod** elevates your experience with pinned tabs and Essentials by making some UI/UX changes.
 
-![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperPins/image.png)
+![image](https://raw.githubusercontent.com/CosmoCreeper/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
 
 **Latest Version:** 1.5.3
