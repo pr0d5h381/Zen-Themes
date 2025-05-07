@@ -1,6 +1,6 @@
 # Super Url Bar
 
-![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
+![image](https://raw.githubusercontent.com/CosmoCreeper/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
 **Latest Version:** 1.4.2
 ## Settings:
