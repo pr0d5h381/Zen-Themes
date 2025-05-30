@@ -76,6 +76,19 @@
 
     /* Enables legacy layout for pinned tabs (icon only in grid) */
     @media (-moz-bool-pref: "uc.pins.legacy-layout") {
+        #navigator-toolbox[zen-sidebar-expanded="true"] {
+            & #tabbrowser-tabs {
+                & .tabbrowser-tab {
+                    &[zen-pinned-changed="true"]:not([zen-essential])
+                    > .tab-stack
+                    > .tab-content
+                    > .tab-icon-stack {
+                    position: unset !important;
+                    top: unset !important;
+                    }
+                }
+            }
+        }
 
         #vertical-pinned-tabs-container, .zen-workspace-pinned-tabs-section {
             .tabbrowser-tab[pinned]  {
