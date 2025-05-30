@@ -363,27 +363,21 @@
 
     /* pins height */
     :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 40px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 40px !important;
+        } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 50px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 50px !important;
+        } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 60px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 60px !important;
+        } 
     }
 
     /* favicon size */
