@@ -246,7 +246,7 @@
             margin-top: auto !important;
         }
 
-        #zen-essentials {
+        #zen-essentials-container, #zen-essentials {
             order: 999 !important;
         }
 
