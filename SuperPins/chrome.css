@@ -568,6 +568,12 @@
     }
 
     @media (-moz-bool-pref: "uc.pins.stay-at-top") {
+        @media (-moz-bool-pref: "theme.nosidebarscrollbar.before125b") {
+            #tabbrowser-arrowscrollbox .zen-workspace-normal-tabs-section {
+                scrollbar-width: none !important;
+            }
+        }
+        
         zen-workspace > arrowscrollbox.workspace-arrowscrollbox {
             overflow-y: hidden !important;
             flex-basis: 100%;
