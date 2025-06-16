@@ -74,6 +74,19 @@
         }
     }
 
+    :root:has(#theme-SuperPins[uc-tabs-show-separator="never"]) {
+        .vertical-pinned-tabs-container-separator {
+            display: none !important;
+        }
+
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section,
+        .zen-workspace-pinned-tabs-section {
+            &:has(> :nth-child(2)) {
+                padding-bottom: 5px !important;
+            }
+        }
+    }
+
     /* Enables legacy layout for pinned tabs (icon only in grid) */
     @media (-moz-bool-pref: "uc.pins.legacy-layout") {
         #navigator-toolbox[zen-sidebar-expanded="true"] {
@@ -194,19 +207,6 @@
             left: 50% !important;
             transform: translateX(-50%) !important;
             width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
-        }
-
-        :root:has(#theme-SuperPins[uc-tabs-show-separator="never"]) {
-            .vertical-pinned-tabs-container-separator {
-                display: none !important;
-            }
-
-            #vertical-pinned-tabs-container>.zen-workspace-tabs-section,
-            .zen-workspace-pinned-tabs-section {
-                &:has(> :nth-child(2)) {
-                    padding-bottom: 5px !important;
-                }
-            }
         }
     }
 
