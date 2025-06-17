@@ -506,9 +506,9 @@
         }
 
         :root:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"]) {
-            #zen-essentials-container, .zen-essentials-container {
+            zen-workspace[active="true"]:has(.zen-workspace-pinned-tabs-section .tabbrowser-tab) {
                 &:has(~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container .zen-workspace-tabs-section[active="true"] .tabbrowser-tab) {
-                    margin-bottom: 8px !important;
+                    margin-top: 6px !important;
                 }
             }
 
@@ -526,8 +526,8 @@
         }
 
         :root:not(:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"])) {
-            #zen-essentials-container, .zen-essentials-container {
-                margin-bottom: 8px !important;
+            #tabbrowser-tabs:has(.zen-essentials-container) #zen-tabs-wrapper {
+                margin-top: 6px !important;
             }
         }
     }
