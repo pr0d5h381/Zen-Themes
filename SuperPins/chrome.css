@@ -208,6 +208,12 @@
             transform: translateX(-50%) !important;
             width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
         }
+
+        @media (-moz-bool-pref: "arcline.superpin") {
+            .vertical-pinned-tabs-container-separator {
+                bottom: -4px !important;
+            }
+        }
     }
 
     /* Make Essentials look more box like */
