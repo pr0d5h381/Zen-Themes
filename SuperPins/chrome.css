@@ -269,6 +269,7 @@
             position: relative !important;
             margin-top: auto !important;
             padding-top: 8px !important;
+            padding-bottom: 10px !important;
         }
 
         #zen-essentials-container, #zen-essentials {
