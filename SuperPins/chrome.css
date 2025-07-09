@@ -269,9 +269,13 @@
             position: relative !important;
             margin-top: auto !important;
             padding-top: 8px !important;
-            padding-bottom: 10px !important;
         }
 
+        /* Adds padding-bottom only when media controls are visible */
+        #zen-media-controls-toolbar:not([hidden]) ~ .zen-essentials-container {
+            padding-bottom: 10px !important;
+        }
+        
         #zen-essentials-container, #zen-essentials {
             order: 999 !important;
         }
