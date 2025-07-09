@@ -1,5 +1,7 @@
 # Zen Themes
 
+SuperPins is available through [Sine](https://github.com/CosmoCreeper/Sine) if you want to stay up-to-date, regardless of unmerged theme store pull requests.
+
 A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-browser.app/).
 
 ## Currently there is 1 Mod available to be installed through [Zen's website](https://zen-browser.app/mods):
