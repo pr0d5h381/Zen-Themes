@@ -75,7 +75,7 @@
     }
 
     :root:has(#theme-SuperPins[uc-tabs-show-separator="never"]) {
-        .vertical-pinned-tabs-container-separator {
+        .vertical-pinned-tabs-container-separator, .pinned-tabs-container-separator {
             display: none !important;
         }
 
@@ -201,7 +201,7 @@
             }
         }
 
-        .vertical-pinned-tabs-container-separator {
+        .vertical-pinned-tabs-container-separator, .pinned-tabs-container-separator {
             position: absolute !important;
             bottom: 7px !important;
             left: 50% !important;
@@ -210,7 +210,7 @@
         }
 
         @media (-moz-bool-pref: "arcline.superpin") {
-            .vertical-pinned-tabs-container-separator {
+            .vertical-pinned-tabs-container-separator, .pinned-tabs-container-separator {
                 bottom: -4px !important;
             }
         }
@@ -530,8 +530,10 @@
             }
 
             #zen-essentials-container, .zen-essentials-container {
-                &:has(> :nth-child(1))~#zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section .vertical-pinned-tabs-container-separator {
-                    max-height: unset !important;
+                &:has(> :nth-child(1))~#zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                    .vertical-pinned-tabs-container-separator, .pinned-tabs-container-separator {
+                        max-height: unset !important;
+                    }
                 }
             }
         }
