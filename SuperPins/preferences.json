@@ -355,5 +355,31 @@
         "type": "string",
         "disabledOn": [],
         "defaultValue": "1"
+    },
+    {
+        "property": "uc.custom.pins-top-padding",
+        "label": "Enable custom top padding above pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.pins.top-padding",
+        "label": "Custom top padding for pinned tabs (px)",
+        "type": "string",
+        "disabledOn": [],
+        "defaultValue": "10"
+    },
+    {
+        "property": "uc.custom.essentials-extra-spacing",
+        "label": "Enable custom extra spacing around essentials",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.essentials.extra-spacing",
+        "label": "Custom extra spacing around essentials container (px)",
+        "type": "string",
+        "disabledOn": [],
+        "defaultValue": "5"
     }
 ]
