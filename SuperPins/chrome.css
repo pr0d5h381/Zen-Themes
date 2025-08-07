@@ -652,4 +652,20 @@
             scrollbar-width: none !important;
         }
     }
+
+    /* Custom top padding for pinned tabs */
+    @media (-moz-bool-pref: "uc.custom.pins-top-padding") {
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section,
+        .zen-workspace-pinned-tabs-section {
+            padding-top: calc(var(--mod-superpins-pins-top-padding, 10) * 1px) !important;
+        }
+    }
+
+    /* Custom extra spacing around essentials */
+    @media (-moz-bool-pref: "uc.custom.essentials-extra-spacing") {
+        #zen-essentials-container, .zen-essentials-container {
+            padding: calc(var(--mod-superpins-essentials-extra-spacing, 5) * 1px) !important;
+            margin: calc(var(--mod-superpins-essentials-extra-spacing, 5) * 1px) 0 !important;
+        }
+    }
 }
