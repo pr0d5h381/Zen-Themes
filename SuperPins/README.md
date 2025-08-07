@@ -5,7 +5,7 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
 ![image](https://raw.githubusercontent.com/CosmoCreeper/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
 
-**Latest Version:** 1.5.3
+**Latest Version:** 1.5.4
 ## Features (toggle in Zens Mod settings):
   - Increase the width of Essentials/Pins (This can be controlled through a dropdown)
   - Controllable Margins between Essentials/Pins (3 Options Dropdown)
@@ -31,6 +31,9 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
   - Change workspace icons size (Extra Small, Small, Medium, Large) ([@gabry-ts](https://github.com/gabry-ts))
   - Control the current workspace indicator icon size (Small, Normal, Large) ([@gabry-ts](https://github.com/gabry-ts))
   - Limit column size of Essentials/Pins.
+  - **Custom top padding for pinned tabs** - Add customizable padding above pinned tabs section
+  - **Custom extra spacing around essentials** - Add customizable spacing around the essentials container
 
 ## Credits
 - Huge Thanks to [@gabry-ts](https://github.com/gabry-ts) and the [original creator](https://github.com/JLBlk) of this mod.
+- Custom padding features added by [@pr0d5h381](https://github.com/pr0d5h381)
